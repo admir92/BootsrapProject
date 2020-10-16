@@ -1,10 +1,18 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 #sticky-sidebar {
-  background: #151719;
-  width: auto;
+  background: #353535;
+  min-height: 100vh;
+  display: none;
+}
+#sticky-sidebar.active {
+  display: block;
 }
 
 .top-bg {
-  background-color: #151719;
+  background-color: #353535;
   padding: 30px;
 }
 
@@ -37,4 +45,48 @@
   color: #fcfcfc;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.navbar-brand {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.section-nav li {
+  list-style-type: none;
+}
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 500;
+}
+/* Sidebar Navigation */
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+  position: fixed;
+  right: 50px;
+  margin: 50px;
+}
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+section {
+  padding-bottom: 20rem;
+}
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
 }
