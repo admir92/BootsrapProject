@@ -1,0 +1,40 @@
+#sticky-sidebar {
+  background: #151719;
+  width: auto;
+}
+
+.top-bg {
+  background-color: #151719;
+  padding: 30px;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.top-bg .toggle-btn {
+  cursor: pointer;
+}
+
+.top-bg .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0px;
+}
+
+.hide-text {
+  display: none;
+}
+#sticky-sidebar.active .hide-text {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sticky-top .nav .item {
+  padding: 15px 20px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  font-size: 15px;
+}
