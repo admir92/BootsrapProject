@@ -1,6 +1,6 @@
 function toggleSidebar() {
-  document.getElementById('sticky-sidebar').classList.toggle('active');
-  console.log('Hello');
+ var toggleButton = document.getElementById('sticky-sidebar');
+ toggleButton.classList.toggle('active');
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Track all sections that have an `id` applied
   document.querySelectorAll('section[id]').forEach((section) => {
     observer.observe(section);
   });

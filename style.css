@@ -1,92 +1,207 @@
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+p {
+	color: #9b9b9b;
 }
 #sticky-sidebar {
-  background: #353535;
-  min-height: 100vh;
-  display: none;
+	background: #353535;
+	display: none;
 }
 #sticky-sidebar.active {
-  display: block;
+	display: block;
 }
 
 .top-bg {
-  background-color: #353535;
-  padding: 30px;
+	background-color: #353535;
+	padding: 30px;
 }
 
 .main-content {
-  padding: 0;
+	padding: 0;
 }
 
-.top-bg .toggle-btn {
-  cursor: pointer;
+.toggle-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 16px;
+	left: 30px;
+	z-index: 1;
 }
 
-.top-bg .toggle-btn span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  margin: 5px 0px;
+.toggle-btn span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #fff;
+	margin: 5px 0px;
 }
 
-.hide-text {
-  display: none;
+#sticky-sidebar .nav .item {
+	padding: 15px 20px;
+	color: #fcfcfc;
+	text-transform: uppercase;
+	font-size: 15px;
 }
-#sticky-sidebar.active .hide-text {
-  display: inline-block;
-  margin-left: 10px;
+.bottom-elements {
+	position: absolute;
+	bottom: 0;
 }
-
-.sticky-top .nav .item {
-  padding: 15px 20px;
-  color: #fcfcfc;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-.main-content {
-  width: 100%;
-}
-
 .navbar-brand {
-  text-align: center;
-  padding: 20px;
-  color: #fff;
+	text-align: center;
+	padding: 20px;
+	color: #fff;
 }
 
 .fa {
-  font-size: 20px;
-  margin-right: 10px;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.fa-comment {
+	margin-right: 0px;
+}
+sup {
+	background-color: red;
+	border-radius: 100%;
+	display: inline-block;
+	padding: 8px 5px;
+	margin-right: 10px;
+	margin-left: -5px;
 }
 .section-nav li {
-  list-style-type: none;
+	list-style-type: none;
 }
 .section-nav li.active > a {
-  color: #333;
-  font-weight: 500;
+	color: #333;
+	font-weight: 500;
 }
-/* Sidebar Navigation */
 .section-nav {
-  padding-left: 0;
-  border-left: 1px solid #efefef;
-  position: fixed;
-  right: 50px;
-  margin: 50px;
+	padding-left: 0;
+	border-left: 1px solid #efefef;
+	position: fixed;
+	right: 50px;
+	margin-top: 20px;
 }
 .section-nav a {
-  text-decoration: none;
-  display: block;
-  padding: 0.125rem 0;
-  color: #ccc;
-  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+	text-decoration: none;
+	display: block;
+	padding: 0.125rem 0;
+	color: #ccc;
+	transition: all 50ms ease-in-out;
 }
-section {
-  padding-bottom: 20rem;
-}
+
 .section-nav a:hover,
 .section-nav a:focus {
-  color: #666;
+	color: #666;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 5px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	top: 0px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #2196f3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.section-name {
+	padding: 2em 0;
+}
+
+.card {
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+#selectFormmControl {
+	border-width: 0 0 1px 0;
+	border-color: #dedede;
+	border-style: solid;
+	padding-left: 0;
+}
+#privacy .sub-text {
+	left: -4px;
+	font-size: 60%;
+}
+
+#privacy .fa-star,
+#privacy .fa-star-half {
+	color: yellow;
+	font-size: 30px;
+}
+
+.main-content .fa-exclamation-circle {
+	color: #9b9b99;
+	font-size: 14px;
+	float: right;
+	line-height: 1.7;
+}
+
+.dis-inline {
+	display: inline-block;
+}
+.card-bg .card {
+	background-color: blue;
+}
+@media only screen and (max-width: 480px) {
+	.navbar-brand {
+		text-align: left;
+	}
+	.top-bg {
+		z-index: 3;
+		position: fixed;
+		top: 0;
+	}
+	.main-content-container {
+		position: relative;
+		top: 80px;
+	}
 }
