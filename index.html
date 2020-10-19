@@ -14,544 +14,788 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        
-        <div id="sticky-sidebar" class="col-sm-1 col-md-2 sidebar ">
-         
-            <div class="nav flex-column">
-              
-              <a class="navbar-brand" href="#">Utopia</a>
-              <div class="item">
-                <i class="fa fa-home"></i> Home
-              </div>
-              <div class="item">
-                <i class="fa fa-columns"></i
-                > Dashboard
-              </div>
-              <div class="item">
-                <i class="fa fa-building"></i
-                > Organizzazioni
-              </div>
-              <div class="item">
-                <i class="fa fa-book"></i
-                > Registri
-              </div>
-              <div class="item">
-                <i class="fa fa-comment"></i
-                ><sup>1</sup>Approvazioni 
-              </div>
-              <div class="item">
-                <i class="fa fa-clipboard"></i
-                > Impatto
-              </div>
-              <div class="item">
-                <i class="fa fa-exclamation-circle"></i
-                > Informative
-              </div>
-              <div class="item">
-                <i class="fa fa-bolt"></i
-                > Violazioni
-              </div>
-              <div class="item">
-                <i class="fa fa-fire"></i
-                > Cataloghi
-              </div>
-              <div >
-                  <div class="list bottom-elements">
-                    <div class="item">
-                      <span>Modalita</span> <span class="badge badge-success">NEW</span>
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                    <div class="item">
-                      <i class="fa fa-exclamation-circle"></i
-                      > Informative
-                    </div>
-                    <div class="item">
-                      <i class="fa fa-bolt"></i
-                      > Violazioni
-                    </div>
-                    <div class="item">
-                      <i class="fa fa-fire"></i
-                      > Cataloghi
-                    </div>
-                  </div>
-                  </div>
-              
-            </div>
-          
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-dark" id="sidebar">
+      <div class="py-4 px-3 mb-4">
+        <div class="media d-flex align-items-center">
+          <div class="media-body">
+            <h4 class="m-0 user-bg">AL</h4>
+            <p class="font-weight-light mt-3 mb-0 text-light">
+              templatedemo@gmail.com
+            </p>
+          </div>
         </div>
-
-        <div class="col main-content" id="main">
-         
-          <div class="container-fluid top-bg">
-            <div class="toggle-btn" id="myBtn" onclick="toggleSidebar()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="container main-content-container">
-            <div class="row">
-            <div class="col-md-10">
-              <section id="privacy" class="section-name">
-                <div class="card" >
-                  <div class="card-body">
-                    <h5 class="card-title">Seleziona un'Organizzazione e scopri il suo privacy</h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia pulvinar est a suscipit. 
-                      Praesent ultrices pretium orci molestie fermentum. Vestibulum faucibus mauris eget ligula cursus
-                      efficitur. Aenean scelerisque luctus leo sit amet pharetra. Vestibulum et aliquam leo.
-                      Duis venenatis gravida augue nec condimentum. <b>Pellentesque scelerisque sed felis suscipit pulvinar.
-                        In at nisi in risus fermentum luctus sed in felis. Mauris vel scelerisque ligula.</b>
-                     
-                    </p>
-                    <p class="mute-text">Organizzazione</p>
-                    <form >
-                      <div class="form-group">
-                        <select class="form-control" id="selectFormmControl">
-                          <option>La Rinoscita Srl</option>
-                        </select>
-                      </div>
-                    </form>
-                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
-                    <h4 class="dis-inline">4.5 <sub class="sub-text">/5</sub>
-                     
-                    </h4>
-                    <div class="dis-inline mx-5">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            
-              <section id="organization" class="section-name">
-                
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-md-12 p-2"><h6><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit</h6></div>
-                    <div class="col-md-6 p-2 card-bg">
-                      <div class="card ">
-                        <div class="card-body text-light">
-                          <p class="card-text text-light dis-inline">Curabitur in finibus lacus nam accumsan</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Generali</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline" >Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="asset" class="section-name">
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-md-12 p-2"><h6><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit</h6></div>
-                    <div class="col-md-6 p-2 card-bg">
-                      <div class="card ">
-                        <div class="card-body text-light">
-                          <p class="card-text text-light dis-inline">Curabitur in finibus lacus nam accumsan</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Generali</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="trattamenti" class="section-name">
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-md-12 p-2"><h6><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit</h6></div>
-                    <div class="col-md-6 p-2 card-bg">
-                      <div class="card ">
-                        <div class="card-body text-light">
-                          <p class="card-text text-light dis-inline">Curabitur in finibus lacus nam accumsan</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Generali</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="informative" class="section-name">
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-md-12 p-2"><h6><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit</h6></div>
-                    <div class="col-md-6 p-2 card-bg">
-                      <div class="card ">
-                        <div class="card-body text-light">
-                          <p class="card-text text-light dis-inline">Curabitur in finibus lacus nam accumsan</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Generali</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="valutazioni" class="section-name">
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-md-12 p-2"><h6><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit</h6></div>
-                    <div class="col-md-6 p-2 card-bg">
-                      <div class="card ">
-                        <div class="card-body text-light">
-                          <p class="card-text text-light dis-inline">Curabitur in finibus lacus nam accumsan</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Generali</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 p-2">
-                      <div class="card">
-                        <div class="card-body">
-                          <p class="card-text dis-inline">Sedi</p>
-                          <i class="fa fa-exclamation-circle"></i>
-                          <h3 class="card-title">20%</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-            </div>
-            <div class="col-md-2">
-              <nav class="section-nav ">
-                <ul>
-                  <li><a href="#privacy">Privacy score</a></li>
-                  <li><a href="#organization">Organizzazione</a></li>
-                  <li><a href="#asset">Asset</a></li>
-                  <li><a href="#trattamenti">Trattamenti</a></li>
-                  <li class=""><a href="#informative">Informative</a></li>
-                  <li class=""><a href="#valutazioni">Valutazioni d'impato</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          </div>
       </div>
+
+      <ul class="nav flex-column mb-0 text-light">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-home mr-3"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-columns mr-3"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-building mr-3"></i>
+            Organizzazioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-book mr-3"></i>
+            Registri
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-comment"></i>
+            <sup>1</sup>Approvazioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-clipboard mr-3"></i>
+            Impatto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-exclamation-circle mr-3"></i>
+            Informative
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-bolt mr-3"></i>
+            Violazioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-fire mr-3"></i>
+            Cataloghi
+          </a>
+        </li>
+      </ul>
+
+      <ul class="bottom-list text-light nav flex-column mb-0">
+        <li class="nav-item">
+          <span class="ml-3">Modalita</span>
+          <span class="badge badge-success mr-2">NEW</span>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-bolt mr-3"></i>
+            Violazioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-bolt mr-3"></i>
+            Violazioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-bolt mr-3"></i>
+            Violazioni
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End vertical navbar -->
+
+    <!-- Page content  -->
+    <div class="page-content" id="content">
+      <div class="top-bg bg-dark p-1">
+        <!-- Toggle button -->
+        <a id="sidebarCollapse" type="button" class="px-4 my-4">
+          <i class="fa fa-bars mr-2"></i>
+        </a>
+      </div>
+      <div class="container-fluid p-md-5">
+        <div class="row">
+          <div class="col-md-2 top-fixed">
+            <nav class="col-sm-3 col-4 vertical-scrolling-nav" id="myScrollspy">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#privacy">Privacy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#organization">Organization</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#asset">Asset</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#trattamenti">Trattamenti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#informative">Informative</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#impatto">Impatto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#valutazioni">Valutazioni</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-md-10 p-4 p-xl-5">
+            <section id="privacy">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Seleziona un'Organizzazione e scopri il suo privacy
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec lacinia pulvinar est a suscipit. Praesent ultrices
+                    pretium orci molestie fermentum. Vestibulum faucibus mauris
+                    eget ligula cursus efficitur. Aenean scelerisque luctus leo
+                    sit amet pharetra. Vestibulum et aliquam leo. Duis venenatis
+                    gravida augue nec condimentum.
+                    <b
+                      >Pellentesque scelerisque sed felis suscipit pulvinar. In
+                      at nisi in risus fermentum luctus sed in felis. Mauris vel
+                      scelerisque ligula.</b
+                    >
+                  </p>
+                  <p class="mute-text">Organizzazione</p>
+                  <form>
+                    <div class="form-group">
+                      <select class="form-control" id="selectFormmControl">
+                        <option>La Rinoscita Srl</option>
+                      </select>
+                    </div>
+                  </form>
+                  <p>
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus
+                  </p>
+                  <h4 class="dis-inline">4.5 <sub class="sub-text">/5</sub></h4>
+                  <div class="dis-inline mx-5">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="organization">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Organization</b> dolor sit amet, consectetur adipiscing
+                    elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="asset">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Asset</b> dolor sit amet, consectetur adipiscing elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="trattamenti">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Trattamenti</b> dolor sit amet, consectetur adipiscing
+                    elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="informative">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Informative</b> dolor sit amet, consectetur adipiscing
+                    elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">
+                        Curabitur in finibus lacus nam accumsan celerisque
+                      </p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="impatto">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Impatto</b> dolor sit amet, consectetur adipiscing elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="valutazioni">
+              <div class="row">
+                <div class="col-md-12 p-1">
+                  <h6>
+                    <b>Valutazioni</b> dolor sit amet, consectetur adipiscing
+                    elit
+                  </h6>
+                </div>
+                <div class="col-sm-12 col-md-6 p-1">
+                  <div class="card card-bg shadow">
+                    <div class="card-body text-light">
+                      <div class="dis-inline w-75">
+                        <p class="card-text text-light">
+                          Curabitur in finibus lacus nam accumsan celerisque
+                          luctus leo sit amet pharetra. Vestibulum et aliquam
+                          leo
+                        </p>
+                      </div>
+                      <i class="fa fa-exclamation-circle dis-inline"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 p-1">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <p class="card-text dis-inline">Generali</p>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <h3 class="card-title">20%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
-
+    <!-- End demo content -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
